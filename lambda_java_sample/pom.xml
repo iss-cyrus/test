@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.amway.booking</groupId>
-	<artifactId>lambda_java_msb_sync_order_pay_status</artifactId>
+	<artifactId>lambda_java_sample</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0</version>
-	<name>lambda_java_msb_sync_order_pay_status</name>
+	<name>lambda_java_sample</name>
 
 	<dependencies>
 		<dependency>
@@ -74,7 +74,7 @@
 				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
-		<finalName>lambda_java_msb_sync_order_pay_status</finalName>
+		<finalName>lambda_java_sample</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

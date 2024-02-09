@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+
+  pre_build:
+    commands:
+      - echo "Executing pre-build commands"
+	build:
+    commands:
+      - cd lambda_java_sample
+      - mvn package 
+  post_build:
+    commands:
+      - aws s3 cplambda_java_sample/build/libs/lambda_java_sample.jar s3://codebuild-git-test-bucket/test_lambda/
+artifacts:
+  files:
+    - target/lambda_java_sample.jar
+  discard-paths: yes
